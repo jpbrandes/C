@@ -1,2 +1,3 @@
 # C
-Esse repositório contém códigos de treino de C.
+Esse repositório contém códigos de treino em C.
+
