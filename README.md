@@ -1,2 +1,2 @@
 # C
-Esse repositório contém códigos e projetos de C.
+Esse repositório contém códigos de treino de C.
