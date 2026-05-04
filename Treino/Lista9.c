@@ -15,13 +15,13 @@ int main()
 */
 
 int main() {
-    int n , i;
+    int n, i;
 
     printf("Digite um numero N: ");
     scanf("%d", &n);
 
-    for (i = n; i > 1; i-=1) {
-        printf("%d\n", n);
+    for (i = n; i >=0; i--) {
+        printf("%d\n", i); // Comentário de ajuda: o problema que estava matando esse código era o fato que o segundo printf estava com a variável que iria ser lida errada, e isso dava erro.
     }
-
+    return 0;
 }
