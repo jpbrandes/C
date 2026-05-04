@@ -14,6 +14,7 @@ int main()
 }
 */
 
+/*
 int main() {
     int n, i;
 
@@ -24,4 +25,15 @@ int main() {
         printf("%d\n", i); // Comentário de ajuda: o problema que estava matando esse código era o fato que o segundo printf estava com a variável que iria ser lida errada, e isso dava erro.
     }
     return 0;
+}
+*/
+
+int main() {
+    int N, i;
+    printf("Digite um número N: ");
+    scanf("%d", &N);
+
+    for (i = N; i <= N; ) {
+        printf("%d\n", i); // Continuar aqui
+    }
 }
