@@ -1,3 +1,5 @@
 # C
-Esse repositório contém códigos de treino em C.
+Esse repositório contém códigos em C.
+
+
 
