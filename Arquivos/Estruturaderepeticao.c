@@ -26,7 +26,7 @@ int main() {
     }
     return 0;
 }
-*/
+Teste */
 
 int main() {
     int N, i;
