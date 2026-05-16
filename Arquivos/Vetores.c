@@ -41,6 +41,10 @@ int main() {
 
     return 0;
 }
+<<<<<<< HEAD
 teste */
+=======
+teste  SEGFUNDO TESTE*/
+>>>>>>> 19877f96069d36d8d8d23e0cbf2efc63a0630f3e
 
 
