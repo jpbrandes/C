@@ -20,4 +20,6 @@
 
 - Variáveis dentro do for, perfeito para automação.
 
+## Vetores
 
+- Exercícios focados especificamente em vetores.
