@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <locale.h>
 
 int main(void)
 {
+  setlocale(LC_ALL,"Portuguese");
   float notas[5] = {7, 8, 9.5, 9.9, 5.2};
   // declarando e inicializando o vetor notas, cada posição do vetor tem sua respectiva nota.
 
