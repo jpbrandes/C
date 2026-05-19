@@ -1,8 +1,9 @@
 #include <stdio.h>
-
+#include <locale.h>
 // Manipulanddo um vetor de N caracteres.
 
 int main() {
+    setlocale(LC_ALL,"Portuguese");
     int i, n;
 
     printf("Digite o valor de N: ");
