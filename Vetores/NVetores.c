@@ -4,12 +4,10 @@
 
 int main() {
     setlocale(LC_ALL,"Portuguese");
-    int i, n;
+    int i, n, int v[n];
 
     printf("Digite o valor de N: ");
     scanf("%d", &n); // Ler N.
-
-    int v[n];
 
     for(i = 0; i <= n-1; i++) {
         printf("Informe o valor da posição %d: ", i);
