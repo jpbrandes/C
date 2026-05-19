@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <locale.h>
 
 int main() {
+    setlocale(LC_ALL,"Portuguese");
     int i, v[10];
 
     for(i = 0; i <=9; i++) {
