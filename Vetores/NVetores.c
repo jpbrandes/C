@@ -12,7 +12,7 @@ int main() {
     int v[n];
 
     for(i = 0; i <= n-1; i++) {
-        printf("nforme o valor da posição %d: ", i);
+        printf("Informe o valor da posição %d: ", i);
         scanf("%d", &v[i]);
     }
 
