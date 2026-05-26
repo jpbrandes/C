@@ -4,84 +4,66 @@
 #define NOTAS 10
 
 typedef struct {
-
-    char registro_academico[9];
-
-    int nota_1;
-    int nota_2;
-    int nota_exame;
-
+    char  ra[9];
+    int   nota_1;
+    int   nota_2;
+    int   nota_exame;
     float media;
-
-    char situacao;
-
+    char  situacao[3];
 } Aluno;
 
-int main() {
+void calcular(Aluno *a) {
+    int soma = a->nota_1 + a->nota_2;
 
-    Aluno aluno[NOTAS];
-
-    int i;
-
-    for(i = 0; i < NOTAS; i++) {
-
-        printf("\nAluno %d\n", i + 1);
-
-        printf("RA: ");
-        scanf("%8s", aluno[i].registro_academico);
-
-        printf("Nota 1: ");
-        scanf("%d", &aluno[i].nota_1);
-
-        printf("Nota 2: ");
-        scanf("%d", &aluno[i].nota_2);
-
-        if((aluno[i].nota_1 + aluno[i].nota_2) < 140) {
-
-            printf("Nota Exame: ");
-            scanf("%d", &aluno[i].nota_exame);
-
-            aluno[i].media =
-                (aluno[i].nota_1 +
-                 aluno[i].nota_2 +
-                 aluno[i].nota_exame) / 3.0;
-
-        } else {
-
-            aluno[i].nota_exame = -1;
-
-            aluno[i].media =
-                (aluno[i].nota_1 +
-                 aluno[i].nota_2) / 2.0;
-        }
-
-        if(aluno[i].media >= 70)
-            aluno[i].situacao = 'A';
-        else
-            aluno[i].situacao = 'R';
+    if (soma >= 140) {
+        a->nota_exame = -1;
+        a->media = soma / 2.0f;
+    } else {
+        printf("Nota do Exame: ");
+        scanf("%d", &a->nota_exame);
+        a->media = (soma + a->nota_exame) / 3.0f;
     }
 
-    printf("\n\n===== RELATORIO =====\n");
+    strcpy(a->situacao, a->media >= 70.0f ? "AP" : "RP");
+}
 
-    for(i = 0; i < NOTAS; i++) {
+void cadastrar(Aluno turma[], int *qtd) {
+    if (*qtd >= NOTAS) { printf("Turma cheia!\n"); return; }
 
-        printf("\nRA: %s", aluno[i].registro_academico);
+    Aluno *a = &turma[*qtd];
 
-        printf("\nN1: %d", aluno[i].nota_1);
-        printf("\nN2: %d", aluno[i].nota_2);
+    printf("RA: ");     scanf("%8s", a->ra);
+    printf("Nota 1: "); scanf("%d", &a->nota_1);
+    printf("Nota 2: "); scanf("%d", &a->nota_2);
 
-        if(aluno[i].nota_exame != -1)
-            printf("\nExame: %d", aluno[i].nota_exame);
-        else
-            printf("\nExame: NAO REALIZADO");
+    calcular(a);
 
-        printf("\nMedia: %.2f", aluno[i].media);
+    printf("Media: %.1f | %s\n", a->media, a->situacao);
+    (*qtd)++;
+}
 
-        if(aluno[i].situacao == 'A')
-            printf("\nSituacao: APROVADO\n");
-        else
-            printf("\nSituacao: REPROVADO\n");
+void listar(Aluno turma[], int qtd) {
+    printf("\n%-10s %4s %4s %4s %7s  %s\n", "RA", "N1", "N2", "NE", "Media", "Sit.");
+    for (int i = 0; i < qtd; i++) {
+        Aluno *a = &turma[i];
+        char ne[5];
+        if (a->nota_exame == -1) strcpy(ne, " -- ");
+        else sprintf(ne, "%4d", a->nota_exame);
+        printf("%-10s %4d %4d %s %7.1f  %s\n",
+            a->ra, a->nota_1, a->nota_2, ne, a->media, a->situacao);
     }
+}
+
+int main(void) {
+    Aluno turma[NOTAS];
+    int qtd = 0, op;
+
+    do {
+        printf("\n1-Cadastrar  2-Listar  0-Sair\nOpcao: ");
+        scanf("%d", &op);
+        if (op == 1) cadastrar(turma, &qtd);
+        if (op == 2) listar(turma, qtd);
+    } while (op != 0);
 
     return 0;
 }
