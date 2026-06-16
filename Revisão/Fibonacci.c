@@ -2,7 +2,7 @@
 
 int main() {
     int N;
-    long long termo1 = 0, termo2 = 1, proximo;
+    long long termo1 = 0, termo2 = 1, proximo; // Long Long armazena inteiros grandes.
     long long soma = 0;
 
     printf("Digite o numero de termos (N): ");
