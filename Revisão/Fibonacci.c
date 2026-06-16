@@ -32,7 +32,7 @@ int main() {
 
             proximo = termo1 + termo2;
             printf(", %lld", proximo);
-            soma += proximo;
+            soma += proximo; // Próxima soma é a soma dos dois anteriores.
 
 
             termo1 = termo2;
