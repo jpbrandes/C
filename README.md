@@ -1,12 +1,9 @@
 # C
-
-- Esse repositório contém códigos em C.
-- Cada pasta contem vários arquivos de pequenos sistemas diferentes em C.
-- Repositório de aprendizado e base em lógica C.
+## Cada pasta contém arquivos que reforçam a fundação da linguagem C. 
 
 ## Fluxo condicional
 
-- Baseado inteiramente em condições, while, if e for.
+- Baseado inteiramente em condições, while, if e for. Estrutura primariamente lógica.
 
 ## Fluxo sequencial
 
@@ -14,12 +11,22 @@
 
 ## Subalgoritmos
 
-- Funções globais fora do main.
+- Funções globais fora do main. Usado para fazer funções ou código global, usado por todo o programa.
 
 ## Variáveis Indexadas
 
-- Variáveis dentro do for, perfeito para automação.
+- Variáveis dentro do for, perfeito para automação. Usado para sistemas que precisam de múltiplas entradas de dados.
 
 ## Vetores
 
-- Exercícios focados especificamente em vetores.
+- Exercícios focados especificamente em vetores. Índices e manipulação vetorial.
+
+## Registros
+
+- Usam primariamente o struct na estrutura de dados. Registros organizam e guardam os dados que o usuário coloca, serve para indentificação de clientes.
+
+## Revisão
+
+- Arquivos contendo vários conceitos misturados e integrados entre si.
+
+
