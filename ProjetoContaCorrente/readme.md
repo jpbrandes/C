@@ -4,7 +4,7 @@ Este repositório contém a implementação modular e robusta de um **Sistema de
 
 ---
 
-## 🏗️ Arquitetura de Dados (`structs`)
+## Arquitetura de Dados (`structs`)
 
 O sistema organiza o gerenciamento das informações utilizando duas estruturas de dados aninhadas, emulando uma relação de banco de dados relacional diretamente na memória volátil:
 
@@ -27,7 +27,7 @@ Representa o cadastro mestre e o estado consolidador de cada cliente bancário.
 
 ---
 
-## 🎛️ Variáveis Globais de Controle
+## Variáveis Globais de Controle
 
 O ciclo de vida da aplicação e o compartilhamento de estados entre os módulos são gerenciados por cinco variáveis globais de escopo estratégico:
 
@@ -41,7 +41,7 @@ O ciclo de vida da aplicação e o compartilhamento de estados entre os módulos
 
 ---
 
-## ⚙️ Detalhamento das Sub-rotinas (Funções Auxiliares)
+## Detalhamento das Sub-rotinas (Funções Auxiliares)
 
 Estas funções executam rotinas repetitivas de busca e validação, servindo como a fundação de segurança para as opções expostas no menu:
 
@@ -52,7 +52,7 @@ Estas funções executam rotinas repetitivas de busca e validação, servindo co
 
 ---
 
-## 🚀 Funcionamento dos Módulos do Menu
+## Funcionamento dos Módulos do Menu
 
 ### 1. Abertura de Conta (`abrir_conta`)
 Verifica se há espaço disponível no vetor global de contas. Caso aprovado, solicita o nome do titular e o CPF, submetendo o documento à validação estrutural em um laço repetitivo do tipo `do-while`. Exige um depósito inicial de, no mínimo, R$ 50,00. O número da conta é atribuído usando `prox_num++`. Por fim, o aporte inicial é automaticamente registrado como o primeiro lançamento do extrato.
@@ -82,7 +82,7 @@ Compila métricas de desempenho de toda a instituição financeira para fins de 
 
 ---
 
-## 💾 Camada de Persistência em Disco
+## Camada de Persistência em Disco
 
 A aplicação implementa persistência de dados estrita através de arquivos binários nativos, eliminando falhas de codificação ou quebras acidentais de linha de texto:
 
@@ -91,7 +91,7 @@ A aplicação implementa persistência de dados estrita através de arquivos bin
 
 ---
 
-## 🔒 Mecanismos de Proteção e Robustez Aplicados
+## Mecanismos de Proteção e Robustez Aplicados
 
 O código-fonte foi intencionalmente blindado contra as vulnerabilidades mais comuns em desenvolvimento de sistemas de baixo nível:
 
