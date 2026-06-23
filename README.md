@@ -1,5 +1,5 @@
 # C
-## Cada pasta contém arquivos que reforçam a fundação da linguagem C. 
+Cada pasta contém arquivos que reforçam a fundação da linguagem C e seus devidos temas.
 
 ---
 
