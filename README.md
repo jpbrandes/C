@@ -32,3 +32,4 @@ Arquivos contendo vários conceitos misturados e integrados entre si.
 ## Projeto Conta Corrente
 
 Um arquivo contendo um sistema inteiro de conta corrente feito em C, com depósitos, extratos e mais funcionalidades.
+-Para o registro dos dados salvos, dentro desse diretório, existe o arquivo **contas.bin**.
