@@ -12,7 +12,7 @@ int main() {
 
     // Validação se o dinheiro é suficiente
     if (valor_pago < valor_compra) {
-        printf("Erro: Valor pago eh insuficiente.\n");
+        printf("Erro: Valor pago e insuficiente.\n");
     } else {
         troco = valor_pago - valor_compra;
         printf("Troco: R$ %.2f\n", troco);
