@@ -8,7 +8,7 @@ int main (){
 
     cube = i * i * i;
 
-    for(i = 1; i <= number; i++) {
+    for(i = 1; i <= number; i++) { // For funciona assim (Onde ele começa; Condição; incremendo ou decremento).
         printf("\nO cubo de %d é igual a %d", i, i * i * i);
     }
     
