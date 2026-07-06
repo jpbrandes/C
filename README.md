@@ -45,6 +45,12 @@ Arquivos contendo vários conceitos misturados e integrados entre si.
 
 ---
 
+## Pointers
+
+Diretório contendo exerícios específicos sobre ponteiros.
+
+---
+
 ## Projeto Conta Corrente
 
 Um arquivo contendo um sistema inteiro de conta corrente feito em C, com depósitos, extratos e mais funcionalidades.
