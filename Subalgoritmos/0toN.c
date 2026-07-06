@@ -1,21 +1,16 @@
 #include <stdio.h>
-
-void mostrarPares(int n) {
+void showEvens(int n) {
     for (int i = 0; i <= n; i++) {
         if (i % 2 == 0) {
             printf("%d ", i);
         }
     }
 }
-
 int main() {
     int n;
-
-    printf("Digite um numero: ");
+    printf("Enter a number: ");
     scanf("%d", &n);
-
-    printf("Numeros pares de 0 ate %d:\n", n);
-    mostrarPares(n);
-
+    printf("Even numbers from 0 to %d:\n", n);
+    showEvens(n);
     return 0;
 }
