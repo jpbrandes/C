@@ -1,47 +1,47 @@
 # C
-Cada pasta contém arquivos que reforçam a fundação da linguagem C e seus devidos temas.
+Each folder contains files that reinforce the foundation of the C language and their respective topics.
 
 ---
 
 ## Fluxo condicional
 
-Baseado inteiramente em condições, while, if e for. Estrutura primariamente lógica.
+Based entirely on conditions, while, if and for. Primarily logical structure.
 
 ---
 
 ## Fluxo sequencial
 
-Parecido com o condicional, porém esse envolve ter uma sequência fluida na manipulações dos dados.
+Similar to the conditional one, but this one involves having a fluid sequence in data manipulation.
 
 ---
 
 ## Subalgoritmos
 
-Funções globais fora do main. Usado para fazer funções ou código global, usado por todo o programa.
+Global functions outside of main. Used to create functions or global code, used throughout the program.
 
 ---
 
 ## Variáveis Indexadas
 
-Variáveis dentro do for, perfeito para automação. Usado para sistemas que precisam de múltiplas entradas de dados.
+Variables inside the for loop, perfect for automation. Used for systems that need multiple data entries.
 
 ---
 
 ## Vetores
 
-Exercícios focados especificamente em vetores. Índices e manipulação vetorial.
+Exercises specifically focused on arrays. Indices and array manipulation.
 
 ---
 
 ## Registros
 
-Usam primariamente o struct na estrutura de dados. Registros organizam e guardam os dados que o usuário coloca, serve para indentificação de clientes.
+Primarily use struct in the data structure. Records organize and store the data the user enters, used for customer identification.
 
 ---
 
 ## Revisão
 
-Arquivos contendo vários conceitos misturados e integrados entre si.
+Files containing various concepts mixed and integrated with each other.
 
 ---
 
@@ -53,6 +53,6 @@ Diretório contendo exerícios específicos sobre ponteiros.
 
 ## Projeto Conta Corrente
 
-Um arquivo contendo um sistema inteiro de conta corrente feito em C, com depósitos, extratos e mais funcionalidades.
+A directory containing an entire checking account system made in C, with deposits, statements and more features.
 
-- Para o registro dos dados salvos, dentro desse diretório, existe o arquivo **contas.bin**.
+- For the record of saved data, inside this directory, there is the contas.bin file.
