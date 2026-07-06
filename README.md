@@ -39,12 +39,6 @@ Primarily use struct in the data structure. Records organize and store the data 
 
 ---
 
-## Review
-
-Files containing various concepts mixed and integrated with each other.
-
----
-
 ## Pointers
 
 Diretório contendo exerícios específicos sobre ponteiros.
