@@ -3,43 +3,43 @@ Each folder contains files that reinforce the foundation of the C language and t
 
 ---
 
-## Fluxo condicional
+## Conditional Flow
 
 Based entirely on conditions, while, if and for. Primarily logical structure.
 
 ---
 
-## Fluxo sequencial
+## Sequential Flow
 
 Similar to the conditional one, but this one involves having a fluid sequence in data manipulation.
 
 ---
 
-## Subalgoritmos
+## Subalgorithms
 
 Global functions outside of main. Used to create functions or global code, used throughout the program.
 
 ---
 
-## Variáveis Indexadas
+## Indexed Variables
 
 Variables inside the for loop, perfect for automation. Used for systems that need multiple data entries.
 
 ---
 
-## Vetores
+## Arrays
 
 Exercises specifically focused on arrays. Indices and array manipulation.
 
 ---
 
-## Registros
+## Records
 
 Primarily use struct in the data structure. Records organize and store the data the user enters, used for customer identification.
 
 ---
 
-## Revisão
+## Review
 
 Files containing various concepts mixed and integrated with each other.
 
@@ -51,7 +51,7 @@ Diretório contendo exerícios específicos sobre ponteiros.
 
 ---
 
-## Projeto Conta Corrente
+## Checking Account Project
 
 A directory containing an entire checking account system made in C, with deposits, statements and more features.
 
