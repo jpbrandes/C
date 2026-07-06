@@ -49,10 +49,3 @@ Files containing various concepts mixed and integrated with each other.
 
 Diretório contendo exerícios específicos sobre ponteiros.
 
----
-
-## Checking Account Project
-
-A directory containing an entire checking account system made in C, with deposits, statements and more features.
-
-- For the record of saved data, inside this directory, there is the contas.bin file.
