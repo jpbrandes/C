@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <locale.h>
+
 int main() {
-    setlocale(LC_ALL,"English");
+    setlocale(LC_ALL,"English"); 
+
     int i, v[10];
     for(i = 0; i <=9; i++) {
         printf("Enter the value for position %d: ", i);
