@@ -4,7 +4,7 @@
 
 int main() {
     setlocale(LC_ALL,"Portuguese");
-    int i, n, int v[n];
+    int i, n, v[n];
 
     printf("Digite o valor de N: ");
     scanf("%d", &n); // Ler N.
