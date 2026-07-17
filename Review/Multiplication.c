@@ -2,25 +2,24 @@
 
 int main()
 {
-    int n, i, j, mult, result;
+    int table_number, multiplicand, multiplier;
 
-    printf("Type the number of the multiplication table: "); // Represents the number of multiplication table that user want to see.
-    scanf("%d", &n);
-
-    result = n * i; // Multiplication operation
+    printf("Type the number of the multiplication table: "); 
+    scanf("%d", &table_number);
     
-    printf("\nMultiplication table of %d: \n", n);
 
-    for(i = 0; i <= 10; i++){
-        printf("\n%d x %d = %d", n, i, n * i); // That makes a single multiplication table.
+    printf("\nMultiplication table of %d: \n", table_number);
+
+    for(multiplicand = 0; multiplicand <= 10; multiplicand++){
+        printf("\n%d x %d = %d", table_number, multiplicand, table_number * multiplicand); 
     }
 
     printf("\n\n=======================================\n\n");
 
-    for(i = 1; i <= n; i++){
+    for(multiplicand = 1; multiplicand <= table_number; multiplicand++){
 
-        for(j = 1; j <= 10; j++){  
-            printf("%d x %d = %d\n", i, j, i * j); // There is two for loops here. The first one locks the multiplication table to n value typed before. The second loop operates the 1 to 10 multiplications.
+        for(multiplier = 1; multiplier <= 10; multiplier++){  
+            printf("%d x %d = %d\n", multiplicand, multiplier, multiplicand * multiplier); 
         }
 
         printf("\n");

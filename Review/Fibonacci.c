@@ -5,17 +5,17 @@
 
 int main()
 {
-    int n, i;
+    int number_of_terms, terms_in_loop;
     // Initialize the first two terms of the sequence
     int current = 0, next = 1, next_term; 
     int sum = 0; // accumulator
 
-    printf("Type N terms you want to see: "); // Here is about how many terms you want to see.
-    scanf("%d", &n);
+    printf("Type the number of terms you want to see: "); // Here is about how many terms you want to see.
+    scanf("%d", &number_of_terms);
 
     printf("Fibonacci Sequence: ");
 
-    for (i = 1; i <= n; i++) {
+    for (terms_in_loop = 1; terms_in_loop <= number_of_terms; terms_in_loop++) {
         // 1. Print the current term
         printf("%d ", current);
        
