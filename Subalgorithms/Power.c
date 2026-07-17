@@ -1,21 +1,21 @@
 #include <stdio.h>
 // Subroutine to calculate X^N
-double power(double x, int n) {
+double power(double base, int integer) {
     double result = 1.0;
-    int i;
-    for (i = 0; i < n; i++) {
-        result *= x;
+    int elementProgression;
+    for (elementProgression = 0; elementProgression < integer; elementProgression++) {
+        result *= base;
     }
     return result;
 }
 int main() {
-    double x, result;
-    int n;
+    double base, result;
+    int integer;
     printf("Enter the value of X (real): ");
-    scanf("%lf", &x);
+    scanf("%lf", &base);
     printf("Enter the value of N (integer): ");
-    scanf("%d", &n);
-    result = power(x, n);
-    printf("%.2lf raised to the power of %d = %.2lf\n", x, n, result);
+    scanf("%d", &integer);
+    result = power(base, integer);
+    printf("%.2lf raised to the power of %d = %.2lf\n", base, integer, result);
     return 0;
 }

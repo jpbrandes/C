@@ -1,31 +1,31 @@
 #include <stdio.h>
 int main() {
-    int N, i, j;
+    int sizeOfArray, elementsArray, Frequency;
     printf("Enter the size of the array: ");
-    scanf("%d", &N);
-    int v[N], used[N];
+    scanf("%d", &sizeOfArray);
+    int v[sizeOfArray], used[sizeOfArray];
     // Initialize control array
-    for(i = 0; i < N; i++) {
-        used[i] = 0;
+    for(elementsArray = 0; elementsArray < sizeOfArray; elementsArray++) {
+        used[elementsArray] = 0;
     }
     // Reading the array
     printf("Enter the elements of the array:\n");
-    for(i = 0; i < N; i++) {
-        scanf("%d", &v[i]);
+    for(elementsArray = 0; elementsArray < sizeOfArray; elementsArray++) {
+        scanf("%d", &v[elementsArray]);
     }
     // Frequency without repetition
     printf("\nNumber - Frequency\n");
-    for(i = 0; i < N; i++) {
-        if(used[i] == 1)
+    for(elementsArray = 0; elementsArray < sizeOfArray; elementsArray++) {
+        if(used[elementsArray] == 1)
             continue;
         int freq = 1;
-        for(j = i + 1; j < N; j++) {
-            if(v[i] == v[j]) {
+        for(Frequency = elementsArray + 1; Frequency < sizeOfArray; Frequency++) {
+            if(v[elementsArray] == v[Frequency]) {
                 freq++;
-                used[j] = 1; // mark as already counted
+                used[Frequency] = 1; // mark as already counted
             }
         }
-        printf("%d - %d\n", v[i], freq);
+        printf("%d - %d\n", v[elementsArray], freq);
     }
     return 0;
 }

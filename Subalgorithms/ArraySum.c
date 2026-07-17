@@ -1,22 +1,22 @@
 #include <stdio.h>
 // Subroutine: sum of the array elements
-int sumArray(int v[], int n) {
+int sumArray(int v[], int elementN) {
     int sum = 0;
-    int i;
-    for (i = 0; i < n; i++) {
-        sum += v[i];
+    int progressionNumber;
+    for (progressionNumber = 0; progressionNumber < elementN; progressionNumber++) {
+        sum += v[progressionNumber];
     }
     return sum;
 }
 int main() {
-    int n, i;
+    int elementN, progressionNumber;
     printf("Enter the size of the array: ");
-    scanf("%d", &n);
-    int v[n];
+    scanf("%d", &elementN);
+    int v[elementN];
     printf("Enter the elements of the array:\n");
-    for (i = 0; i < n; i++) {
-        scanf("%d", &v[i]);
+    for (progressionNumber = 0; progressionNumber < elementN; progressionNumber++) {
+        scanf("%d", &v[progressionNumber]);
     }
-    printf("Sum of elements = %d\n", sumArray(v, n));
+    printf("Sum of elements = %d\n", sumArray(v, elementN));
     return 0;
 }

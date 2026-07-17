@@ -1,26 +1,26 @@
 #include <stdio.h>
 int main() {
-    int N, i, j;
+    int dimensionN, lines, colunes;
     printf("Enter the dimension N of the square matrix: ");
-    scanf("%d", &N);
-    int MAT[N][N];
+    scanf("%d", &dimensionN);
+    int MAT[dimensionN][dimensionN];
     // Reading the matrix
-    printf("Enter the elements of the %dx%d matrix:\n", N, N);
-    for(i = 0; i < N; i++) {
-        for(j = 0; j < N; j++) {
-            scanf("%d", &MAT[i][j]);
+    printf("Enter the elements of the %dx%d matrix:\n", dimensionN, dimensionN);
+    for(lines = 0; lines < dimensionN; lines++) {
+        for(colunes = 0; colunes < dimensionN; colunes++) {
+            scanf("%d", &MAT[lines][colunes]);
         }
     }
     printf("\nElements above the main diagonal:\n");
-    for(i = 0; i < N; i++) {
-        for(j = i + 1; j < N; j++) {
-            printf("%d ", MAT[i][j]);
+    for(lines = 0; lines < dimensionN; lines++) {
+        for(colunes = lines + 1; colunes < dimensionN; colunes++) {
+            printf("%d ", MAT[lines][colunes]);
         }
     }
     printf("\n\nElements below the main diagonal:\n");
-    for(i = 1; i < N; i++) {
-        for(j = 0; j < i; j++) {
-            printf("%d ", MAT[i][j]);
+    for(lines = 1; lines < dimensionN; lines++) {
+        for(colunes = 0; colunes < lines; colunes++) {
+            printf("%d ", MAT[lines][colunes]);
         }
     }
     printf("\n");

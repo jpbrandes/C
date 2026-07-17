@@ -1,17 +1,17 @@
 #include <stdio.h>
 // Subroutine: sum of cubes from 1 to n
-int sumOfCubes(int n) {
+int sumOfCubes(int number) {
     int sum = 0;
-    int i;
-    for (i = 1; i <= n; i++) {
-        sum += i * i * i;
+    int NumberProgression;
+    for (NumberProgression = 1; NumberProgression <= number; NumberProgression++) {
+        sum += NumberProgression * NumberProgression * NumberProgression;
     }
     return sum;
 }
 int main() {
-    int n;
+    int number;
     printf("Enter a positive integer: ");
-    scanf("%d", &n);
-    printf("Sum of cubes from 1 to %d = %d\n", n, sumOfCubes(n));
+    scanf("%d", &number);
+    printf("Sum of cubes from 1 to %d = %d\n", number, sumOfCubes(number));
     return 0;
 }

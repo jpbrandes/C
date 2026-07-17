@@ -1,29 +1,29 @@
 #include <stdio.h>
 int main() {
-    int A[15], B[15], C[30];
-    int i;
+    int VectorA[15], VectorB[15], VectorC[30];
+    int Elements;
     // Reading set A
     printf("Enter the 15 numbers for set A:\n");
-    for(i = 0; i < 15; i++) {
-        scanf("%d", &A[i]);
+    for(Elements = 0; Elements < 15; Elements++) {
+        scanf("%d", &VectorA[Elements]);
     }
     // Reading set B
     printf("Enter the 15 numbers for set B:\n");
-    for(i = 0; i < 15; i++) {
-        scanf("%d", &B[i]);
+    for(Elements = 0; Elements < 15; Elements++) {
+        scanf("%d", &VectorB[Elements]);
     }
     // Copies the elements of A to C
-    for(i = 0; i < 15; i++) {
-        C[i] = A[i];
+    for(Elements = 0; Elements < 15; Elements++) {
+        VectorC[Elements] = VectorA[Elements];
     }
     // Copies the elements of B to C
-    for(i = 0; i < 15; i++) {
-        C[i + 15] = B[i];
+    for(Elements = 0; Elements < 15; Elements++) {
+        VectorC[Elements + 15] = VectorB[Elements];
     }
     // Displays set C
     printf("\nSet C:\n");
-    for(i = 0; i < 30; i++) {
-        printf("C[%d] = %d\n", i, C[i]);
+    for(Elements = 0; Elements < 30; Elements++) {
+        printf("C[%d] = %d\n", Elements, VectorC[Elements]);
     }
     return 0;
 }

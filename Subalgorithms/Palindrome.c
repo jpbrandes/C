@@ -1,11 +1,11 @@
 #include <stdio.h>
 // Subroutine: checks if it is a palindrome
-int isPalindrome(int n) {
-    int original = n;
+int isPalindrome(int integer) {
+    int original = integer;
     int reversed = 0;
-    while (n > 0) {
-        reversed = reversed * 10 + (n % 10);
-        n = n / 10;
+    while (integer > 0) {
+        reversed = reversed * 10 + (integer % 10);
+        integer = integer / 10;
     }
     if (original == reversed)
         return 1;
@@ -13,13 +13,13 @@ int isPalindrome(int n) {
         return 0;
 }
 int main() {
-    int n;
+    int integer;
     printf("Enter an integer: ");
-    scanf("%d", &n);
-    if (isPalindrome(n)) {
-        printf("%d is a palindrome\n", n);
+    scanf("%d", &integer);
+    if (isPalindrome(integer)) {
+        printf("%d is a palindrome\n", integer);
     } else {
-        printf("%d is not a palindrome\n", n);
+        printf("%d is not a palindrome\n", integer);
     }
     return 0;
 }

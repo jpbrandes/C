@@ -1,31 +1,31 @@
 #include <stdio.h>
 
 int main() {
-    int v[10];
-    int i;
-    int first;
+    int vector[10];
+    int elements;
+    int firstTerm;
 
     // Reading the array
     printf("Enter the 10 elements of the array:\n");
-    for(i = 0; i < 10; i++) {
-        scanf("%d", &v[i]);
+    for(elements = 0; elements < 10; elements++) {
+        scanf("%d", &vector[elements]);
     }
 
     // Stores the first element
-    first = v[0];
+    firstTerm = vector[0];
 
     // Left rotation
-    for(i = 0; i < 9; i++) {
-        v[i] = v[i + 1];
+    for(elements = 0; elements < 9; elements++) {
+        vector[elements] = vector[elements + 1];
     }
 
     // Places the first element at the end
-    v[9] = first;
+    vector[9] = firstTerm;
 
     // Printing the rotated array
     printf("\nRotated array:\n");
-    for(i = 0; i < 10; i++) {
-        printf("%d ", v[i]);
+    for(elements = 0; elements < 10; elements++) {
+        printf("%d ", vector[elements]);
     }
 
     printf("\n");

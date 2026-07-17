@@ -1,20 +1,20 @@
 #include <stdio.h>
 int main() {
-    int A[30], B[30];
-    int i;
+    int VectorA[30], VectorB[30];
+    int Elements;
     // Reading set A
     printf("Enter the 30 numbers for set A:\n");
-    for(i = 0; i < 30; i++) {
-        scanf("%d", &A[i]);
+    for(Elements = 0; Elements < 30; Elements++) {
+        scanf("%d", &VectorA[Elements]);
     }
     // Multiplies the elements of A by 3 and stores them in B
-    for(i = 0; i < 30; i++) {
-        B[i] = A[i] * 3;
+    for(Elements = 0; Elements < 30; Elements++) {
+        VectorB[Elements] = VectorA[Elements] * 3;
     }
     // Displays set B
     printf("\nSet B:\n");
-    for(i = 0; i < 30; i++) {
-        printf("B[%d] = %d\n", i, B[i]);
+    for(Elements = 0; Elements < 30; Elements++) {
+        printf("B[%d] = %d\n", Elements, VectorB[Elements]);
     }
     return 0;
 }

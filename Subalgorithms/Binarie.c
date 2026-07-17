@@ -1,29 +1,29 @@
 #include <stdio.h>
 // Subroutine: prints a number in binary
-void printBinary(int n) {
+void printBinary(int decimalNumber) {
     int bin[32];
-    int i = 0;
-    int j;
-    if (n == 0) {
+    int progressiveLoop = 0;
+    int decrementLoop;
+    if (decimalNumber == 0) {
         printf("0");
         return;
     }
-    while (n > 0) {
-        bin[i] = n % 2;
-        n = n / 2;
-        i++;
+    while (decimalNumber > 0) {
+        bin[progressiveLoop] = decimalNumber % 2;
+        decimalNumber = decimalNumber / 2;
+        progressiveLoop++;
     }
     // prints in reverse
-    for (j = i - 1; j >= 0; j--) {
-        printf("%d", bin[j]);
+    for (decrementLoop = progressiveLoop - 1; decrementLoop >= 0; decrementLoop--) {
+        printf("%d", bin[decrementLoop]);
     }
 }
 int main() {
-    int n;
+    int decimalNumber;
     printf("Enter a decimal number: ");
-    scanf("%d", &n);
+    scanf("%d", &decimalNumber);
     printf("Binary: ");
-    printBinary(n);
+    printBinary(decimalNumber);
     printf("\n");
     return 0;
 }

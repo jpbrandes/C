@@ -2,23 +2,23 @@
 #include <locale.h>
 int main() {
     setlocale(LC_ALL,"English");
-    int i, n;
+    int progressionTerm, positionValue;
     printf("Enter the value N: ");
-    scanf("%d", &n);
-    int v[n];
-    for(i = 0; i < n; i++) {
-        printf("Enter the value for position %d: ", i);
-        scanf("%d", &v[i]);
+    scanf("%d", &positionValue);
+    int vector[positionValue];
+    for(progressionTerm = 0; progressionTerm < positionValue; progressionTerm++) {
+        printf("Enter the value for position %d: ", progressionTerm);
+        scanf("%d", &vector[progressionTerm]);
     }
-    for(i = 0; i < n; i++){
-        if(v[i] < 0) {
-            printf("The number %d is less than zero.\n", v[i]);
+    for(progressionTerm = 0; progressionTerm < positionValue; progressionTerm++){
+        if(vector[progressionTerm] < 0) {
+            printf("The number %d is less than zero.\n", vector[progressionTerm]);
         }
-        else if (v[i] > 0) {
-            printf("The number %d is greater than zero.\n", v[i]);
+        else if (vector[progressionTerm] > 0) {
+            printf("The number %d is greater than zero.\n", vector[progressionTerm]);
         }
         else {
-            printf("The number %d is equal to zero.\n", v[i]);
+            printf("The number %d is equal to zero.\n", vector[progressionTerm]);
         }
     }
     return 0;

@@ -3,7 +3,7 @@
 int main(){
 	
 	setlocale(LC_ALL, "English");
-	int array[12], x, y, sum;
+	int array[12], positionX, positionY, sum;
 	
 	printf("Enter 12 values for the array\n");
 	for(int i = 0; i < 12; i++) {
@@ -14,11 +14,11 @@ int main(){
 	
 	//  The point here is that the values x and y will correspond to the array indices, and inside the index will be the number chosen above.
 	printf("\nEnter the value for position X (0 to 11): ");
-	scanf("%d", &x);
+	scanf("%d", &positionX);
 	printf("\nEnter the value for position Y (0 to 11): ");
-	scanf("%d", &y);  
+	scanf("%d", &positionY);  
 	
-	sum = array[x] + array[y];
+	sum = array[positionX] + array[positionY];
 	
-	printf("The sum of the values contained in indices %d and %d is: %d", x, y, sum); // Displays the summed values through the indices
+	printf("The sum of the values contained in indices %d and %d is: %d", positionX, positionY, sum); // Displays the summed values through the indices
 }

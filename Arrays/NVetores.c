@@ -4,18 +4,18 @@
 
 int main() {
     setlocale(LC_ALL,"Portuguese");
-    int i, n, v[n];
+    int progressionLoop, termN, vector[termN];
 
     printf("Digite o valor de N: ");
-    scanf("%d", &n); // Ler N.
+    scanf("%d", &termN); // Ler N.
 
-    for(i = 0; i <= n-1; i++) {
-        printf("Informe o valor da posição %d: ", i);
-        scanf("%d", &v[i]);
+    for(progressionLoop = 0; progressionLoop <= termN-1; progressionLoop++) {
+        printf("Informe o valor da posição %d: ", progressionLoop);
+        scanf("%d", &vector[progressionLoop]);
     }
 
-    for(i = 0; i<=n-1; i++){
-        printf("v[%d] = %d\n", i, v[i]);
+    for(progressionLoop = 0; progressionLoop<=termN-1; progressionLoop++){
+        printf("v[%d] = %d\n", progressionLoop, vector[progressionLoop]);
     }
   return 0;
 }

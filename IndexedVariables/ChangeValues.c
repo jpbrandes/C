@@ -1,32 +1,32 @@
 #include <stdio.h>
 int main() {
-    int A[20], B[20];
-    int i, temp;
+    int VectorA[20], VectorB[20];
+    int numbers, temp;
     // Reading set A
     printf("Enter the 20 numbers for set A:\n");
-    for(i = 0; i < 20; i++) {
-        scanf("%d", &A[i]);
+    for(numbers = 0; numbers < 20; numbers++) {
+        scanf("%d", &VectorA[numbers]);
     }
     // Reading set B
     printf("Enter the 20 numbers for set B:\n");
-    for(i = 0; i < 20; i++) {
-        scanf("%d", &B[i]);
+    for(numbers = 0; numbers < 20; numbers++) {
+        scanf("%d", &VectorB[numbers]);
     }
     // Swapping values between A and B
-    for(i = 0; i < 20; i++) {
-        temp = A[i];
-        A[i] = B[i];
-        B[i] = temp;
+    for(numbers = 0; numbers < 20; numbers++) {
+        temp = VectorA[numbers];
+        VectorA[numbers] = VectorB[numbers];
+        VectorB[numbers] = temp;
     }
     // Displays the new set A
     printf("\nNew set A:\n");
-    for(i = 0; i < 20; i++) {
-        printf("A[%d] = %d\n", i, A[i]);
+    for(numbers = 0; numbers < 20; numbers++) {
+        printf("A[%d] = %d\n", numbers, VectorA[numbers]);
     }
     // Displays the new set B
     printf("\nNew set B:\n");
-    for(i = 0; i < 20; i++) {
-        printf("B[%d] = %d\n", i, B[i]);
+    for(numbers = 0; numbers < 20; numbers++) {
+        printf("B[%d] = %d\n", numbers, VectorB[numbers]);
     }
     return 0;
 }

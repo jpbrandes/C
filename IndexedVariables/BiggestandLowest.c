@@ -1,29 +1,29 @@
 #include <stdio.h>
 
 int main() {
-    int N, i;
+    int NumberOfElements, Terms;
 
     printf("Enter the size of the array: ");
-    scanf("%d", &N);
+    scanf("%d", &NumberOfElements);
 
-    int v[N];
+    int v[NumberOfElements];
 
     // Reading the array
     printf("Enter the elements of the array:\n");
-    for(i = 0; i < N; i++) {
-        scanf("%d", &v[i]);
+    for(Terms = 0; Terms < NumberOfElements; Terms++) {
+        scanf("%d", &v[Terms]);
     }
 
     int highestPos = 0;
     int lowestPos = 0;
 
     // Finds the highest and lowest position
-    for(i = 1; i < N; i++) {
-        if(v[i] > v[highestPos]) {
-            highestPos = i;
+    for(Terms = 1; Terms < NumberOfElements; Terms++) {
+        if(v[Terms] > v[highestPos]) {
+            highestPos = Terms;
         }
-        if(v[i] < v[lowestPos]) {
-            lowestPos = i;
+        if(v[Terms] < v[lowestPos]) {
+            lowestPos = Terms;
         }
     }
 
