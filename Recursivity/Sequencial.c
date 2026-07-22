@@ -8,7 +8,7 @@ void printSequence(int targetNumber, int currentNumber) {
 
     printf("%d ", currentNumber);
 
-    printSequence(targetNumber, currentNumber + 1);
+    printSequence(targetNumber, currentNumber + 1); // Recursive function that counts number.
 }
 
 int main(void) {
@@ -19,7 +19,7 @@ int main(void) {
 
     printf("Sequence from 0 to %d:\n", numberN);
     
-    printSequence(numberN, 0);
+    printSequence(numberN, 0); // Function called.
     
     printf("\n");
 
