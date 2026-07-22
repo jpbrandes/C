@@ -23,3 +23,7 @@ int main()
     return 0;
 
 }
+
+/*A torre de Hanoi é um problema matemático crescente, em que existem discos empilados em ordem descresente de tamanho.
+O objetivo do jogo é organizar os discos sem que o disco maior fique em cima de um disco menor, conforme o número de discos aumentam,
+leva cada vez mais tempo para organizar cada disco, esse jogo, é um exemplo onde pode ser resolvido com recursividade. */
