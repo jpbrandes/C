@@ -41,5 +41,11 @@ Primarily use struct in the data structure. Records organize and store the data 
 
 ## Pointers
 
-Diretório contendo exerícios específicos sobre ponteiros.
+Directory that contains exercises about pointers in C.
+
+---
+
+## Recursivity
+
+That directory contains programs that are solved by recurive methods.
 
