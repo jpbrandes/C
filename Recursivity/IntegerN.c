@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-int power(int base, int exponent) {
-    if (exponent == 0) {
+int power(int staticBase, int exponentN) {
+    if (exponentN == 0) {
         return 1;
     }
 
-    return base * power(base, exponent - 1); // That function is going to calculate the power of a number, but, if expoent is equal 0, is gonna return 1.
+    return staticBase * power(staticBase, exponentN - 1); // That function is going to calculate the power of a number, but, if expoent is equal 0, is gonna return 1.
 }
 
 int main()

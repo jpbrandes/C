@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-int sumSequence(int number) {
-    if (number == 0) {
+int sumSequence(int numberN) {
+    if (numberN == 0) {
         return 0;
     }
 
-    return number + sumSequence(number - 1); // That function is gonna calculate the number of each repetition summed with the number - 1.
+    return numberN + sumSequence(numberN - 1); // That function is gonna calculate the number of each repetition summed with the number - 1.
 }
 
 int main()
