@@ -32,17 +32,17 @@ int main()
                 printf("You can't divide by zero. Try again.\n");
             } else {
                 printf("%d %c %d = %d.\n", number1, MathOperation, number2, number1 % number2);
-                break;
             }
+            break;
             
         case '/':
             if(number2 == 0){
                 printf("You can't divide by zero. Try again.\n");
             } else {
                 printf("%d %c %d = %d.\n", number1, MathOperation, number2, number1 / number2);
-                break;
             }
-            
+            break;        
+    
         case '*':
             printf("%d %c %d = %d.\n", number1, MathOperation, number2, number1 * number2);
             break;
