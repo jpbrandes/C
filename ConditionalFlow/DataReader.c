@@ -5,10 +5,11 @@ int main() {
     char gender;
     int total_men = 0;
     int total_women = 0;
-    int i;
+    int loop_progress;
+
     // Loop to read data for 30 people
-    for (i = 1; i <= 30; i++) {
-        printf("--- Person %d ---\n", i);
+    for (loop_progress = 1; loop_progress <= 30; loop_progress++) {
+        printf("--- Person %d ---\n", loop_progress);
         
         printf("Enter the name: ");
         // fgets used to allow names with spaces
