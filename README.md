@@ -49,3 +49,8 @@ Directory that contains exercises about pointers in C.
 
 That directory contains programs that are solved by recurive methods.
 
+---
+
+## Functions
+
+A directory that studys how to code without use a single block of code. One of the best code pratices is to write code using functions.

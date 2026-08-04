@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main() {
-    int n, i;
+    int NumberN, loopCounter;
     float number;
     printf("Enter the quantity of numbers (N): ");
-    scanf("%d", &n);
-    for (i = 1; i <= n; i++) {
-        printf("Enter number %d: ", i);
+    scanf("%d", &NumberN);
+    for (loopCounter = 1; loopCounter <= NumberN; loopCounter++) {
+        printf("Enter number %d: ", loopCounter);
         scanf("%f", &number);
         if (number > 0) {
             printf("Result: Positive\n\n");
