@@ -1,5 +1,25 @@
 #include <stdio.h>
 
+float DivisionBetweenTwoNumbers(float number1, float number2, float result_of_function_operation){
+
+    if(number1 == 0 && number2 == 0){
+        printf("Its not possible to divide 0 with 0. Indetermination.\n");
+    } else if (number2 == 0){
+        printf("Its not possible to divide by zero.\n");
+    }
+
+    result_of_function_operation = number1 / number2;
+
+    return result_of_function_operation;
+}
+
+float MultiplicationBetweenTwoNumbers(float number1, float number2, float result_of_function_operation){
+
+    result_of_function_operation = number1 * number2;
+
+    return result_of_function_operation;
+}
+
 float DifferenceBetweenTwoNumbers(float number1, float number2, float result_of_function_operation){
 
     result_of_function_operation = number1 - number2;
@@ -20,14 +40,16 @@ int main(){
     float first_number, second_number, result_of_operation;
 
     printf("Type the first number: ");
-    scanf("%f", &first_number);
+    scanf(" %f", &first_number);
 
     printf("Type the second number: ");
-    scanf("%f", &second_number);
+    scanf(" %f", &second_number);
 
     printf("The result of addition is %.2f\n", SumOfTwoNumbers(first_number, second_number, result_of_operation));
     printf("The result of subtracion is %.2f\n", DifferenceBetweenTwoNumbers(first_number, second_number, result_of_operation));
-
+    printf("The result of multiplcation is %.2f\n", MultiplicationBetweenTwoNumbers(first_number, second_number, result_of_operation));
+    printf("The result of division is %.2f.\n", DivisionBetweenTwoNumbers(first_number, second_number, result_of_operation));
+    
     return 0;
 
 }

@@ -7,22 +7,22 @@ int main()
     int variable = 15;
     int *pointer; // Point is declared with a *.
 
-    pointer = &variable;
+    pointer = &variable; // Pointing to variable address.
 
-    printf("Var content = %d\n", variable);
-    printf("Var address = %p\n", &variable); 
-    printf("Var content pointed by ptr = %d\n", *pointer);
-    printf("Var address pointed by ptr = %p\n", pointer); 
+    printf("Variable content = %d\n", variable); // Just the content.
+    printf("Variable address = %p\n", &variable);  // Variable Address.
+    printf("Variable content pointed by ptr = %d\n", *pointer); // Content pointed to the pointer.
+    printf("Variable address pointed by ptr = %p\n", pointer);  // Addres pointed by pointer.
     printf("pointer address = %p\n", &pointer);
 
     *pointer = 73;
 
     printf("\n\n");
 
-    printf("Var content = %d\n", variable);
-    printf("Var address = %p\n", &variable); 
-    printf("Var content pointed by ptr = %d\n", *pointer);
-    printf("Var address pointed by ptr = %p\n", pointer); 
+    printf("Variable content = %d\n", variable);
+    printf("Variable address = %p\n", &variable); 
+    printf("Variable content pointed by ptr = %d\n", *pointer);
+    printf("Variable address pointed by ptr = %p\n", pointer); 
     printf("pointer address = %p\n", &pointer);
     
     // Remember of %p - That variable var, is allocated on that memory space, on that space 15 is allocated.
