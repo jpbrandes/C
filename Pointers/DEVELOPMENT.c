@@ -1,65 +1,57 @@
-// Primeiro passo, declarar as variáveis no main, feito
-// Associar ponteiros as variáveis declaradas no main, feito
-// CONTINUAR DESENVOLVIMENTO
-
 #include <stdio.h>
 #include <stdlib.h>
 
-int IntegerFunction(int integer_number, int *integer_pointer){
-    integer_pointer = &integer_number;
-    printf("Variable address: %p.\n", &integer_number);
-
-    return &integer_number;
+// Modifies the integer value using its pointer
+void setIntegerValue(int *integer_pointer, int function_value) {
+    *integer_pointer = function_value;
 }
 
-float FloatFunction(float float_variable, float *float_pointer){
-    float_pointer = &float_variable;
-    printf("Variable address: %p.\n", &float_variable);
-
-    return &float_variable;
+// Modifies the float value using its pointer
+void setFloatValue(float *float_pointer, float function_value) {
+    *float_pointer = function_value;
 }
 
-char CharFunction(char char_variable, char *char_pointer){
-    char_pointer = &char_variable;
-    printf("Variable address: %p.\n", &char_variable);
-
-    return &char_variable;
+// Modifies the char value using its pointer
+void setCharValue(char *char_pointer, char function_value) {
+    *char_pointer = function_value;
 }
 
-void DoubleValueOfPointers(int *integer_pointer, char *char_pointer, float *float_pointer){
-    *integer_pointer = *integer_pointer * 2;
-    *char_pointer = *char_pointer * 2;
-    *float_pointer = *float_pointer * 2;
-
+// Displays the variable's value and its memory address (%p)
+void printIntegerAddress(int *integer_pointer) {
+    printf("Integer - Value: %d | Address: %p\n", *integer_pointer, (void*)integer_pointer);
 }
 
+void printFloatAddress(float *float_pointer) {
+    printf("Float   - Value: %.2f | Address: %p\n", *float_pointer, (void*)float_pointer);
+}
+
+void printCharAddress(char *char_pointer) {
+    printf("Char    - Value: %c | Address: %p\n", *char_pointer, (void*)char_pointer); // This void between () is called casting
+}
 
 int main()
 {
+    // Step 1: Declare variables and pointers
     char char_variable, *char_pointer;
-    int integer_number, *int_pointer;
+    int integer_number, *integer_pointer;
     float float_variable, *float_pointer;
 
+    // Step 2: Associate pointers to the variables
     char_pointer = &char_variable;
-    int_pointer = &integer_number;
+    integer_pointer = &integer_number;
     float_pointer = &float_variable;
 
-    
-    printf("Type a character to store in the char variable: ");
-    scanf("%c", &char_variable);
+    // Step 3: Modify values using ONLY functions with pointers
+    setCharValue(char_pointer, 'A');
+    setIntegerValue(integer_pointer, 42);
+    setFloatValue(float_pointer, 3.14f);
 
-    printf("Type a number to store in the integer variable: ");
-    scanf("%d", &integer_number);
+    // Step 4: Display values and addresses
+    printf("==== Variable Addresses ====\n\n");
 
-    printf("Type a number to store in the float variable: ");
-    scanf("%f", &float_variable);
-
-    printf("Numbers/Characters stored: %d, %.2f, %c.", integer_number, float_variable, char_variable);
-
-    printf("\n====Variable addresses====\n");
-
-    printf(CharFunction(&char_variable, *char_pointer));
-    printf();    
+    printCharAddress(char_pointer);
+    printIntegerAddress(integer_pointer);
+    printFloatAddress(float_pointer);
 
     return 0;
 }
