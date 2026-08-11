@@ -12,7 +12,7 @@ int *allocate_initial_buffer(size_t capacity) {
 int resize_buffer(int **buffer_pointer, size_t new_capacity) {
     int *reallocated_memory = (int *)realloc(*buffer_pointer, new_capacity * sizeof(int));
     if (reallocated_memory == NULL) {
-        return 0;
+        return 0; // The function will resize buffer when the capacity for store numbers is out of space.
     }
     *buffer_pointer = reallocated_memory;
     return 1;
