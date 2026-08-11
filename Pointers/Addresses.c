@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 
-void modify_values(int *integer_pointer, float *float_pointer, char *char_pointer, 
-                   int new_integer_value, float new_float_value, char new_char_value) {
+void modify_values(int *integer_pointer, float *float_pointer, char *char_pointer, int new_integer_value, float new_float_value, char new_char_value) {
     *integer_pointer = new_integer_value;
     *float_pointer = new_float_value;
     *char_pointer = new_char_value;
