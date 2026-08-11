@@ -23,7 +23,7 @@ void print_buffer_elements(const int *buffer, size_t count) {
     for (size_t index = 0; index < count; index++) {
         printf("Element %zu: %d\n", index + 1, *(buffer + index));
     }
-    printf("----------------------------------\n");
+    printf("----------------------------------\n"); // A function that prints every element that you type using a for loop.
 }
 
 void deallocate_buffer(int **buffer_pointer) {
