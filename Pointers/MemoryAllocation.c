@@ -6,7 +6,7 @@
 
 int *allocate_initial_buffer(size_t capacity) {
     int *buffer = (int *)malloc(capacity * sizeof(int));
-    return buffer; //
+    return buffer; // A function that allocate buffer with initial capacity.
 }
 
 int resize_buffer(int **buffer_pointer, size_t new_capacity) {
