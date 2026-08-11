@@ -17,7 +17,7 @@ int main()
 
     *pointer = 73;
 
-    printf("\n\n");
+    printf("\nAfter modification\n\n");
 
     printf("Variable content = %d\n", variable);
     printf("Variable address = %p\n", &variable); 
