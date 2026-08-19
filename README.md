@@ -11,7 +11,7 @@ Based entirely on conditions, while, if and for. Primarily logical structure.
 
 ## Sequential Flow
 
-Similar to the conditional one, but this one involves having a fluid sequence in data manipulation.
+Similar to the conditional one, but this one involves having a fluid sequence in data manipulation.	
 
 ---
 
